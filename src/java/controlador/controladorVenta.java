@@ -152,7 +152,7 @@ public class controladorVenta extends HttpServlet {
                 }
             }            
         } catch (IOException ex) {
-            Logger.getLogger(controladorCliente.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(controladorVenta.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

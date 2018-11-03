@@ -3,8 +3,8 @@ package conexion;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.logging.Logger;
 import java.util.logging.Level;
+import java.util.logging.Logger;
 public class clsConexion {
     
     private Connection connection;
@@ -21,7 +21,7 @@ public class clsConexion {
             return connection;
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
-            System.out.println("Error estableciendo conexión con la base de datos");
+            System.out.println("Error estableciendo conexión con la base de datos");            
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(clsConexion.class.getName()).log(Level.SEVERE, null, ex);
         }

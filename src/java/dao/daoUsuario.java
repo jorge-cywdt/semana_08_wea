@@ -6,11 +6,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import modelos.cliente;
+import java.util.ArrayList;
 public class daoUsuario {
     
     clsConexion objCon = new clsConexion();                  
@@ -43,11 +40,10 @@ public class daoUsuario {
             rs = null;
             return usu;
         } catch (SQLException ex) {
-            Logger.getLogger(daoUsuario.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println(ex.getMessage());
-            System.out.println("Error en Cargar");            
+            System.out.println("Error en findByUsername");
             SQLException = ex.getMessage();
-        }                
+        }
         return null;
     }
     

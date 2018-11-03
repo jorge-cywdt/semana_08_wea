@@ -130,7 +130,7 @@ public class controladorAcceso extends HttpServlet {
                 request.getSession().setAttribute("password", null);
             } else {
                 if (posta == 1) {
-                    request.getSession().setAttribute("mensajeExito", "¡Bienvenido(a)!");
+                    request.getSession().setAttribute("mensajeExito", "Ha iniciado sesión con éxito");
                     response.sendRedirect("venta");
                     request.getSession().setAttribute("username", username);
                     request.getSession().setAttribute("password", password);
@@ -142,7 +142,7 @@ public class controladorAcceso extends HttpServlet {
                 }
             }
         } catch (IOException ex) {
-            Logger.getLogger(controladorCliente.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(controladorAcceso.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

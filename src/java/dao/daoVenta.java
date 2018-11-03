@@ -7,8 +7,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 public class daoVenta {
     
     clsConexion objCon = new clsConexion();                  
@@ -34,9 +32,8 @@ public class daoVenta {
             findByLastId();
             return true;            
         } catch (SQLException ex) {
-            Logger.getLogger(daoCliente.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println(ex.getMessage());
-            System.out.println("Error en Insertar");            
+            System.out.println("Error en save");
             SQLException = ex.getMessage();
         }
         return false;
@@ -56,9 +53,8 @@ public class daoVenta {
             ps = null;           
             return true;
         } catch (SQLException ex) {
-            Logger.getLogger(daoCliente.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println(ex.getMessage());
-            System.out.println("Error en Insertar");            
+            System.out.println("Error en saveDetalleVenta");
             SQLException = ex.getMessage();
         }
         return false;
@@ -81,9 +77,8 @@ public class daoVenta {
             ps = null;
             rs = null;
         } catch (SQLException ex) {                 
-            Logger.getLogger(daoCliente.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println(ex.getMessage());
-            System.out.println("Error en Cargar");
+            System.out.println("Error en findByLastId");
             SQLException = ex.getMessage();
         }
     }
