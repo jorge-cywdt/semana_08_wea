@@ -55,7 +55,7 @@ public class controladorVenta extends HttpServlet {
 //            out.println("</html>");
 //        }
 
-        String action = request.getParameter("saveVenta");
+        String action = request.getParameter("action");
         
         if (action == null) {
             save(request, response);
