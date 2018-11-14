@@ -26,60 +26,62 @@
                     <div class="card-body">
                            
                         <form action="controladorVenta" method="post" id="formulario"> <!-- novalidate -->
-                            <table id="table_id" class="table table-bordered table-striped"> <!-- <table class="table table-sm table-bordered table-striped table-hover table-responsive"> -->
-                                <thead class="thead-dark">
-                                    <tr>
-                                        <th>Buscar</th>
-                                        <th>Catálogo</th>                 
-                                        <th>Venta</th>
-                                    </tr>						
-                                </thead>					
-                                <tbody>                               
-                                    <tr>
-                                        <td  class="col-3">
-                                            <jsp:include page="venta/cliente.jsp"/>
-                                            <jsp:include page="venta/categoria.jsp"/>
-                                            <jsp:include page="venta/fabricante.jsp"/>                                            
-                                            <h4>
-                                                <button type="button" class="btn btn-primary" onclick="buscar()">Buscar</button>
-                                            </h4>
-                                        </td>                                                                    
-                                        <td class="col-4">
-                                            <table id="table_id" class="table table-striped table-bordered"> <!-- <table class="table table-bordered table-striped table-hover table-responsive table-sm"> -->                            
-                                                <thead class="thead-dark">
-                                                    <tr>                                                    
-                                                        <th>Producto</th>                                                    
-                                                        <th>Stock</th>
-                                                        <th>Precio</th>  
-                                                        <th>Opciones</th>
-                                                    </tr>        
-                                                </thead>
-                                                <tbody id="data">
+                            <div class="table-responsive">
+                                <table id="table_id" class="table table-bordered table-striped"> <!-- <table class="table table-sm table-bordered table-striped table-hover table-responsive"> -->
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th>Buscar</th>
+                                            <th>Catálogo</th>                 
+                                            <th>Venta</th>
+                                        </tr>						
+                                    </thead>					
+                                    <tbody>                               
+                                        <tr>
+                                            <td  class="col-3">
+                                                <jsp:include page="venta/cliente.jsp"/>
+                                                <jsp:include page="venta/categoria.jsp"/>
+                                                <jsp:include page="venta/fabricante.jsp"/>                                            
+                                                <h4>
+                                                    <button type="button" class="btn btn-primary" onclick="buscar()">Buscar</button>
+                                                </h4>
+                                            </td>                                                                    
+                                            <td class="col-4">
+                                                <table id="table_id" class="table table-striped table-bordered"> <!-- <table class="table table-bordered table-striped table-hover table-responsive table-sm"> -->                            
+                                                    <thead class="thead-dark">
+                                                        <tr>                                                    
+                                                            <th>Producto</th>                                                    
+                                                            <th>Stock</th>
+                                                            <th>Precio</th>  
+                                                            <th>Opciones</th>
+                                                        </tr>        
+                                                    </thead>
+                                                    <tbody id="data">
 
-                                                </tbody>
-                                            </table>
-                                        </td>
-                                        <td  class="col-4">
-                                            <table id="table_id" class="table table-striped table-bordered"> <!-- <table class="table table-bordered table-striped table-hover table-responsive table-sm"> -->                            
-                                                <thead class="thead-dark">
-                                                    <tr>
-                                                        <th class="d-none">ID</th>                                				                                    
-                                                        <th>Nombre</th>
-                                                        <th>Precio</th>
-                                                        <th>Cantidad</th>
-                                                        <th>Total</th>
-                                                        <th>Eliminar</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody id="data2">
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                            <td  class="col-4">
+                                                <table id="table_id" class="table table-striped table-bordered"> <!-- <table class="table table-bordered table-striped table-hover table-responsive table-sm"> -->                            
+                                                    <thead class="thead-dark">
+                                                        <tr>
+                                                            <th class="d-none">ID</th>                                				                                    
+                                                            <th>Nombre</th>
+                                                            <th>Precio</th>
+                                                            <th>Cantidad</th>
+                                                            <th>Total</th>
+                                                            <th>Eliminar</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="data2">
 
-                                                </tbody>
-                                            </table>
-                                            <h5 id="margin80"> Total <span class="badge badge-dark" id="granTotal">Total</span></h5>
-                                        </td>
-                                    </tr>                                                   
-                                </tbody>			                            
-                            </table>
+                                                    </tbody>
+                                                </table>
+                                                <h5 id="margin80"> Total <span class="badge badge-dark" id="granTotal">Total</span></h5>
+                                            </td>
+                                        </tr>                                                   
+                                    </tbody>			                            
+                                </table>
+                            </div>
                             <h4>
                                 <button type="submit" name="action" value="saveVenta" class="btn btn-success">Crear Venta</button>
                             </h4>
