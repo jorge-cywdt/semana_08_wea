@@ -7,7 +7,7 @@
     user="root"
     password=""
     var="cn"/>
-<sql:query var="cat" dataSource="${cn}">
+<sql:query var="cat" dataSource="${ cn }">
     select id,nombre 
     from   categorias;
 </sql:query>
@@ -16,7 +16,7 @@
     <label for="categoria" class="col-form-label col-md-4">Categoría:</label> <!-- col-md-2 -->
     <div class="col-md-7"> <!-- col-md-5 -->
         <select name="categoria" id="categoria" class="form-control">
-            <c:forEach var="cat" items="${cat.rows}">
+            <c:forEach var="cat" items="${ cat.rows }">
                 <option value="${ cat.id }" id="${ cat.id }">${ cat.nombre }</option>
             </c:forEach>
         </select>        

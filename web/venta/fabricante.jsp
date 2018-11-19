@@ -7,7 +7,7 @@
     user="root"
     password=""
     var="cn"/>         
-<sql:query var="fab" dataSource="${cn}">
+<sql:query var="fab" dataSource="${ cn }">
     select id,nombre 
     from   fabricantes;
 </sql:query>                      
@@ -16,7 +16,7 @@
     <label for="fabricante" class="col-form-label col-md-4">Fabricante:</label> <!-- col-md-2 -->
     <div class="col-md-7"> <!-- col-md-5 -->
         <select name="fabricante" id="fabricante" class="form-control">
-            <c:forEach var="fab" items="${fab.rows}">
+            <c:forEach var="fab" items="${ fab.rows }">
                 <option value="${ fab.id }" id="${ fab.id }">${ fab.nombre }</option>
             </c:forEach>
         </select>        

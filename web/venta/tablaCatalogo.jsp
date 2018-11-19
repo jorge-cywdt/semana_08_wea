@@ -13,7 +13,7 @@
     int idFabricante = Integer.parseInt(request.getParameter("idFabricante"));
 %>
 
-<sql:query var="pro" dataSource="${cn}">
+<sql:query var="pro" dataSource="${ cn }">
     select     p.id,p.nombre,c.nombre,f.nombre,p.stock,p.precio
     from       productos p
     inner join categorias c on p.id_categoria = c.id
@@ -26,7 +26,7 @@
     <thead>
     </thead>
     <tbody>
-        <c:forEach var="pro" items="${pro.rowsByIndex}">
+        <c:forEach var="pro" items="${ pro.rowsByIndex }">
         <tr>                        
             <td id="desProd">${ pro[1] }</td>                        
             <td id="stoProd">${ pro[4] }</td>

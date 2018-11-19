@@ -7,7 +7,7 @@
     user="root"
     password=""
     var="cn"/>
-<sql:query var="cli" dataSource="${cn}">
+<sql:query var="cli" dataSource="${ cn }">
     select id,nombre 
     from   clientes;
 </sql:query>
@@ -16,7 +16,7 @@
     <label for="cliente" class="col-form-label col-md-4">Cliente:</label> <!-- col-md-2 -->
     <div class="col-md-7"> <!-- col-md-5 -->
         <select name="cliente" id="cliente" class="form-control">
-            <c:forEach var="cli" items="${cli.rows}">
+            <c:forEach var="cli" items="${ cli.rows }">
                 <option value="${ cli.id }" id="${ cli.id }">${ cli.nombre }</option>
             </c:forEach>
         </select>        

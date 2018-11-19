@@ -10,7 +10,7 @@ var="cn"/>
 
 <% int idProducto = Integer.parseInt(request.getParameter("idProducto")); %>
 
-<sql:query var="pro" dataSource="${cn}">
+<sql:query var="pro" dataSource="${ cn }">
     select id,nombre,precio
     from   productos 
     where  id = <%= idProducto %>                
@@ -22,7 +22,7 @@ var="cn"/>
     </thead>
     <tbody>
 --%>
-        <c:forEach var="pro" items="${pro.rowsByIndex}">
+        <c:forEach var="pro" items="${ pro.rowsByIndex }">
         <tr id="row_${pro[0]}">
             <td class="d-none">
                 <input type="hidden" name="item_id[]" value="${pro[0]}"></input>
