@@ -136,6 +136,7 @@ public class controladorAcceso extends HttpServlet {
                     request.getSession().setAttribute("password", password);
                 } else {
                     request.getSession().setAttribute("mensajeError", "Lo sentimos, no hemos podido validar sus credenciales");
+                    request.getSession().setAttribute("SQLException", SQLException);
                     response.sendRedirect("acceso");
                     request.getSession().setAttribute("username", null);
                     request.getSession().setAttribute("password", null);

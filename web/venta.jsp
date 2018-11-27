@@ -31,7 +31,7 @@
                                     <thead class="thead-dark">
                                         <tr>
                                             <th>Buscar</th>
-                                            <th>Catálogo</th>                 
+                                            <th>Producto</th>                 
                                             <th>Venta</th>
                                         </tr>						
                                     </thead>					
@@ -49,7 +49,7 @@
                                                 <table id="table_id" class="table table-striped table-bordered"> <!-- <table class="table table-bordered table-striped table-hover table-responsive table-sm"> -->                            
                                                     <thead class="thead-dark">
                                                         <tr>                                                    
-                                                            <th>Producto</th>                                                    
+                                                            <th>Nombre</th>                                                    
                                                             <th>Stock</th>
                                                             <th>Precio</th>  
                                                             <th>Opciones</th>
@@ -107,7 +107,7 @@
             $.ajax({
                 data: {idCategoria:categoria,idFabricante:fabricante},
                 method: 'post',                    
-                url: 'venta/tablaCatalogo.jsp',
+                url: 'venta/tablaProducto.jsp',
                 success: function(response) {
                     $('#data').html(response);
                 }
