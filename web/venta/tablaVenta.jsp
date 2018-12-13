@@ -35,7 +35,7 @@ var="cn"/>
             <td>
 		<span id="totalImporte_${pro[0]}" name="precio[]">${pro[2]}</span>
             </td>
-            <td><button type="button" class="btn btn-sm btn-danger" onclick="eliminar( ${pro[0]} )">Eliminar</button></td>
+            <td><button type="button" class="btn btn-sm btn-danger" onclick="eliminar( ${pro[0]} );">Eliminar</button></td>
         </tr>
         </c:forEach>
 <%-- 
