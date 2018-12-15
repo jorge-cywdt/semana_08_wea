@@ -145,7 +145,7 @@
         
         function calcularGranTotal() {
             var total = 0;
-            $('span[id^="totalImporte_"]').each(function() { // All elements with a title attribute value starting with "Tom"
+            $('span[id^="totalImporte_"]').each(function() { // All elements with a title attribute value starting with "totalImporte_"
                 total += parseFloat($(this).text());
             });
             $('#granTotal').text(total.toFixed(2));
