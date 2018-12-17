@@ -30,12 +30,14 @@ var="cn"/>
             <td>${pro[1]}</td>
             <td>${pro[2]}</td>
             <td class="col-3">
-		<input class="form-control" id="cantidad_${pro[0]}" type="number" name="cantidad[]" value="1" min="1" onchange="calcularImporte(${pro[0]}, ${pro[2]}, this.value);"></input>
+                <input class="form-control" id="cantidad_${pro[0]}" type="number" name="cantidad[]" value="1" min="1" onchange="calcularImporte(${pro[0]}, ${pro[2]}, this.value);"></input>
             </td>  
             <td>
-		<span id="totalImporte_${pro[0]}" name="precio[]">${pro[2]}</span>
+		<span id="totalImporte_${pro[0]}">${pro[2]}</span>
             </td>
-            <td><button type="button" class="btn btn-sm btn-danger" onclick="eliminar( ${pro[0]} );">Eliminar</button></td>
+	    <td>
+		<button type="button" class="btn btn-sm btn-danger" onclick="eliminar( ${pro[0]} );">Eliminar</button>
+            </td>
         </tr>
         </c:forEach>
 <%-- 
