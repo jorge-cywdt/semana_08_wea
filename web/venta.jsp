@@ -27,7 +27,7 @@
                            
                         <form action="controladorVenta" method="post" id="formulario"> <!-- novalidate -->
                             <div class="table-responsive">
-                                <table id="table_id" class="table table-bordered table-striped"> <!-- <table class="table table-sm table-bordered table-striped table-hover table-responsive"> -->
+                                <table class="table table-bordered table-striped"> <!-- <table class="table table-sm table-bordered table-striped table-hover table-responsive"> -->
                                     <thead class="thead-dark">
                                         <tr>
                                             <th>Buscar</th>
@@ -37,7 +37,7 @@
                                     </thead>					
                                     <tbody>                               
                                         <tr>
-                                            <td  class="col-3">
+                                            <td class="col-3">
                                                 <jsp:include page="venta/cliente.jsp"/>
                                                 <jsp:include page="venta/categoria.jsp"/>
                                                 <jsp:include page="venta/fabricante.jsp"/>                                            
@@ -46,7 +46,7 @@
                                                 </h4>
                                             </td>                                                                    
                                             <td class="col-4">
-                                                <table id="table_id" class="table table-striped table-bordered"> <!-- <table class="table table-bordered table-striped table-hover table-responsive table-sm"> -->                            
+                                                <table class="table table-striped table-bordered"> <!-- <table class="table table-bordered table-striped table-hover table-responsive table-sm"> -->                            
                                                     <thead class="thead-dark">
                                                         <tr>                                                    
                                                             <th>Nombre</th>                                                    
@@ -60,8 +60,8 @@
                                                     </tbody>
                                                 </table>
                                             </td>
-                                            <td  class="col-4">
-                                                <table id="table_id" class="table table-striped table-bordered"> <!-- <table class="table table-bordered table-striped table-hover table-responsive table-sm"> -->                            
+                                            <td class="col-4">
+                                                <table class="table table-striped table-bordered"> <!-- <table class="table table-bordered table-striped table-hover table-responsive table-sm"> -->                            
                                                     <thead class="thead-dark">
                                                         <tr>
                                                             <th class="d-none">ID</th>                                				                                    
