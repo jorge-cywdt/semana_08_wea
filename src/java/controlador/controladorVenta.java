@@ -28,7 +28,7 @@ import java.util.logging.Logger;
 public class controladorVenta extends HttpServlet {
 
     daoVenta objDaoVen = new daoVenta(); 
-    private static final Logger log = Logger.getLogger(controladorVenta.class.getName());
+    private static final Logger logger = Logger.getLogger(controladorVenta.class.getName());
     
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -148,7 +148,7 @@ public class controladorVenta extends HttpServlet {
                     
                     objDaoVen.saveDetalleVenta(objDetVen);
                     
-                    log.info("ID: " + item_id[i].toString() + ", Cantidad: " + cantidad[i]);
+                    logger.info("ID: " + item_id[i] + ", Cantidad: " + cantidad[i]);
                 }
             }            
         } catch (IOException ex) {
