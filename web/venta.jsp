@@ -27,7 +27,7 @@
                            
                         <form action="controladorVenta" method="post" id="formulario"> <!-- novalidate -->
                             <div class="table-responsive">
-                                <table class="table table-bordered table-striped"> <!-- <table class="table table-sm table-bordered table-striped table-hover table-responsive"> -->
+                                <table class="table table-bordered table-striped"> <!-- <table class="table table-sm table-bordered table-striped table-hover"> -->
                                     <thead class="thead-dark">
                                         <tr>
                                             <th>Buscar</th>
